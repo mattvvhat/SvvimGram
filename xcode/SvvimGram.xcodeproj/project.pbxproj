@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 44;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,9 +16,16 @@
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		AC40C3579BB64EA3A2083669 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25676F373D3E48A392E4BC25 /* QuickTime.framework */; };
-		4F86CC6E341841EAA730FA14 /* SvvimGram_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1A9E6A8454034E9096E913DB /* SvvimGram_Prefix.pch */; };
+		C9213389187BCF4600828C98 /* Soda-Can.obj in Resources */ = {isa = PBXBuildFile; fileRef = C9213388187BCF4600828C98 /* Soda-Can.obj */; };
+		C921338F187BCF8A00828C98 /* pizza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C921338E187BCF8A00828C98 /* pizza.jpg */; };
+		C9213390187BD1E000828C98 /* project.frag in Resources */ = {isa = PBXBuildFile; fileRef = C921338A187BCF7A00828C98 /* project.frag */; };
+		C9213391187BD1E000828C98 /* project.vert in Resources */ = {isa = PBXBuildFile; fileRef = C921338B187BCF7A00828C98 /* project.vert */; };
 		C97455EFA2384A53986F304D /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 03D18A33B65D46F8B558BE8A /* CinderApp.icns */; };
-		182BD7BC17B94F2AA71229F3 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FEF269AE2F4CAB8761F3FA /* Resources.h */; };
+		C97478D5187BB73E003DECA4 /* InstagramStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97478D3187BB73E003DECA4 /* InstagramStream.cpp */; };
+		C9FA6F60187CAE1900CD71AC /* hblur.frag in Resources */ = {isa = PBXBuildFile; fileRef = C9FA6F5A187CAABD00CD71AC /* hblur.frag */; };
+		C9FA6F61187CAE1900CD71AC /* pass.vert in Resources */ = {isa = PBXBuildFile; fileRef = C9FA6F5B187CAABD00CD71AC /* pass.vert */; };
+		C9FA6F62187CAE1900CD71AC /* vblur.frag in Resources */ = {isa = PBXBuildFile; fileRef = C9FA6F5C187CAABD00CD71AC /* vblur.frag */; };
+		C9FA6F6D187CDFE700CD71AC /* svvim-logo-white.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FA6F6C187CDFE700CD71AC /* svvim-logo-white.png */; };
 		E6ABCBC128DF4EAEAED0B8D9 /* SvvimGramApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9E5F1A8CCA84F27BFE1A297 /* SvvimGramApp.cpp */; };
 /* End PBXBuildFile section */
 
@@ -28,18 +35,35 @@
 		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		03D18A33B65D46F8B558BE8A /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1A9E6A8454034E9096E913DB /* SvvimGram_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = SvvimGram_Prefix.pch; sourceTree = "<group>"; };
+		25676F373D3E48A392E4BC25 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		4397C570128C461C86383165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		8D1107320486CEB800E47090 /* SvvimGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SvvimGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9E5F1A8CCA84F27BFE1A297 /* SvvimGramApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../src/SvvimGramApp.cpp; sourceTree = "<group>"; name = SvvimGramApp.cpp; };
-		B2FEF269AE2F4CAB8761F3FA /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/Resources.h; sourceTree = "<group>"; name = Resources.h; };
-		03D18A33B65D46F8B558BE8A /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; name = CinderApp.icns; };
-		4397C570128C461C86383165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; name = Info.plist; };
-		1A9E6A8454034E9096E913DB /* SvvimGram_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = SvvimGram_Prefix.pch; sourceTree = "<group>"; name = SvvimGram_Prefix.pch; };
-		25676F373D3E48A392E4BC25 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; name = QuickTime.framework; };
+		B2FEF269AE2F4CAB8761F3FA /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		B9E5F1A8CCA84F27BFE1A297 /* SvvimGramApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = SvvimGramApp.cpp; path = ../src/SvvimGramApp.cpp; sourceTree = "<group>"; };
+		C9213388187BCF4600828C98 /* Soda-Can.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Soda-Can.obj"; path = "../resources/obj/Soda-Can.obj"; sourceTree = "<group>"; };
+		C921338A187BCF7A00828C98 /* project.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = project.frag; path = ../resources/project.frag; sourceTree = "<group>"; };
+		C921338B187BCF7A00828C98 /* project.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = project.vert; path = ../resources/project.vert; sourceTree = "<group>"; };
+		C921338E187BCF8A00828C98 /* pizza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pizza.jpg; path = ../resources/images/pizza.jpg; sourceTree = "<group>"; };
+		C9520287187BF36C00D4131A /* SvvimScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SvvimScene.h; path = ../src/SvvimScene.h; sourceTree = "<group>"; };
+		C97478D2187BB660003DECA4 /* AsynchMovieWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsynchMovieWriter.h; sourceTree = "<group>"; };
+		C97478D3187BB73E003DECA4 /* InstagramStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InstagramStream.cpp; sourceTree = "<group>"; };
+		C97478D4187BB73E003DECA4 /* InstagramStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramStream.h; sourceTree = "<group>"; };
+		C97478D7187BBC1B003DECA4 /* svvim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = svvim.h; path = ../src/svvim.h; sourceTree = "<group>"; };
+		C97478D8187BBC87003DECA4 /* SvvimPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SvvimPost.h; path = ../src/SvvimPost.h; sourceTree = "<group>"; };
+		C97478D9187BBFBB003DECA4 /* ProjectionScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectionScene.h; path = ../src/ProjectionScene.h; sourceTree = "<group>"; };
+		C9FA6F52187C020B00CD71AC /* InstagramProjectionScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstagramProjectionScene.h; path = ../src/InstagramProjectionScene.h; sourceTree = "<group>"; };
+		C9FA6F53187C143500CD71AC /* SodaCan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SodaCan.h; path = ../src/SodaCan.h; sourceTree = "<group>"; };
+		C9FA6F5A187CAABD00CD71AC /* hblur.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = hblur.frag; path = ../resources/hblur.frag; sourceTree = "<group>"; };
+		C9FA6F5B187CAABD00CD71AC /* pass.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = pass.vert; path = ../resources/pass.vert; sourceTree = "<group>"; };
+		C9FA6F5C187CAABD00CD71AC /* vblur.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = vblur.frag; path = ../resources/vblur.frag; sourceTree = "<group>"; };
+		C9FA6F6C187CDFE700CD71AC /* svvim-logo-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "svvim-logo-white.png"; path = "../resources/images/svvim-logo-white.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +86,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				B9E5F1A8CCA84F27BFE1A297 /* SvvimGramApp.cpp */,
+				C97478D3187BB73E003DECA4 /* InstagramStream.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -115,18 +147,15 @@
 			name = SvvimGram;
 			sourceTree = "<group>";
 		};
-		01B97315FEAEA392516A2CEA /* Blocks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Blocks;
-			sourceTree = "<group>";
-		};
 		29B97315FDCFA39411CA2CEA /* Headers */ = {
 			isa = PBXGroup;
 			children = (
 				B2FEF269AE2F4CAB8761F3FA /* Resources.h */,
 				1A9E6A8454034E9096E913DB /* SvvimGram_Prefix.pch */,
+				C97478D7187BBC1B003DECA4 /* svvim.h */,
+				C97478D8187BBC87003DECA4 /* SvvimPost.h */,
+				C97478DB187BC3DC003DECA4 /* Dependencies */,
+				C97478DA187BC3CC003DECA4 /* Scenes */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -134,6 +163,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C9FA6F6C187CDFE700CD71AC /* svvim-logo-white.png */,
+				C921338E187BCF8A00828C98 /* pizza.jpg */,
+				C9213388187BCF4600828C98 /* Soda-Can.obj */,
+				C97478E0187BCD22003DECA4 /* glsl */,
 				03D18A33B65D46F8B558BE8A /* CinderApp.icns */,
 				4397C570128C461C86383165 /* Info.plist */,
 			);
@@ -148,6 +181,38 @@
 				25676F373D3E48A392E4BC25 /* QuickTime.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C97478DA187BC3CC003DECA4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C97478D9187BBFBB003DECA4 /* ProjectionScene.h */,
+				C9FA6F52187C020B00CD71AC /* InstagramProjectionScene.h */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		C97478DB187BC3DC003DECA4 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				C9FA6F53187C143500CD71AC /* SodaCan.h */,
+				C9520287187BF36C00D4131A /* SvvimScene.h */,
+				C97478D2187BB660003DECA4 /* AsynchMovieWriter.h */,
+				C97478D4187BB73E003DECA4 /* InstagramStream.h */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		C97478E0187BCD22003DECA4 /* glsl */ = {
+			isa = PBXGroup;
+			children = (
+				C9FA6F5A187CAABD00CD71AC /* hblur.frag */,
+				C9FA6F5B187CAABD00CD71AC /* pass.vert */,
+				C9FA6F5C187CAABD00CD71AC /* vblur.frag */,
+				C921338A187BCF7A00828C98 /* project.frag */,
+				C921338B187BCF7A00828C98 /* project.vert */,
+			);
+			name = glsl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +241,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SvvimGram" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -200,7 +267,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9FA6F6D187CDFE700CD71AC /* svvim-logo-white.png in Resources */,
+				C9FA6F60187CAE1900CD71AC /* hblur.frag in Resources */,
+				C9FA6F61187CAE1900CD71AC /* pass.vert in Resources */,
+				C9FA6F62187CAE1900CD71AC /* vblur.frag in Resources */,
+				C9213390187BD1E000828C98 /* project.frag in Resources */,
+				C9213391187BD1E000828C98 /* project.vert in Resources */,
 				C97455EFA2384A53986F304D /* CinderApp.icns in Resources */,
+				C9213389187BCF4600828C98 /* Soda-Can.obj in Resources */,
+				C921338F187BCF8A00828C98 /* pizza.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97478D5187BB73E003DECA4 /* InstagramStream.cpp in Sources */,
 				E6ABCBC128DF4EAEAED0B8D9 /* SvvimGramApp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,24 +298,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SvvimGram_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = SvvimGram_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
 				PRODUCT_NAME = SvvimGram;
-				WRAPPER_EXTENSION = app;
 				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
@@ -261,48 +337,42 @@
 				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
 				PRODUCT_NAME = SvvimGram;
 				STRIP_INSTALLED_PRODUCT = YES;
-				WRAPPER_EXTENSION = app;
 				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = i386;
-				CINDER_PATH = "../../../../libs/cinder_0.8.5_mac";
+				CINDER_PATH = ../../../../libs/cinder_0.8.5_mac;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = (
-					"\"$(CINDER_PATH)/include\" ../include",
-					../blocks/QuickTime/include,
-				);
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/QuickTime/include";
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = i386;
-				CINDER_PATH = "../../../../libs/cinder_0.8.5_mac";
+				CINDER_PATH = ../../../../libs/cinder_0.8.5_mac;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = (
-					"\"$(CINDER_PATH)/include\" ../include",
-					../blocks/QuickTime/include,
-				);
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/QuickTime/include";
 			};
 			name = Release;
 		};
