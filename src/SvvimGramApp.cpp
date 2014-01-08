@@ -185,7 +185,7 @@ void SvvimGramApp::draw() {
   gl::color(ColorA(1, 1, 1, m___.a));
   gl::draw(texture, getWindowBounds());
 
-  gl::color(ColorA(1, 1, 1, m___.a/3.f));
+  gl::color(ColorA(1, .9, .6, m___.a/2.f));
   gl::draw(blurred, getWindowBounds());
   
   drawLogo();

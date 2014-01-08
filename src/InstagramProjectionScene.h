@@ -91,8 +91,8 @@ public:
       float t1 = t;
       float t2 = t + M_PI;
       
-      Vec3d proj  = Vec3f( 13.f * cos(t1), 3,  17.f * sin(t1) );
-      Vec3f eye   = Vec3f( 14.f * cos(t2), 3,  14.f * sin(t2) );
+      Vec3d proj  = Vec3f( 11.f * cos(t1), 3,  5.f * sin(t1) );
+      Vec3f eye   = Vec3f( 30.f * cos(t2), 3,  30.f * sin(t2) );
 
       mCam.point.lookAt(  eye,  mCam.dest, mCam.up);
       mProjector->lookAt( proj, mCam.dest);

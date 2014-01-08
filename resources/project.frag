@@ -38,6 +38,10 @@ void main (void)
     gl_FragColor = texture2DProj(proj, coord/scale);
   }
   else if (coord.x >= 0.f && coord.x <= 1.f && coord.y >= 0.f && coord.y <= 1.f) {
+    gl_FragColor = max(dot(N, L) , 0.0) * texture2DProj(proj, coord/scale);
+    gl_FragColor.a = 1.f;
+  }
+  else if (coord.x >= 0.f && coord.x <= 1.f && coord.y >= 0.f && coord.y <= 1.f) {
     gl_FragColor = gl_FrontLightModelProduct.sceneColor + Iamb + Idiff + Ispec;
     gl_FragColor = max(dot(N,L), 0.0) * texture2DProj(proj, coord/scale);
     gl_FragColor.rgb = vec3(0.f);

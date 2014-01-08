@@ -35,7 +35,8 @@ public:
     VBLUR = GlslProg(loadResource("pass.vert"), loadResource("vblur.frag"));
   }
 
-  gl::Texture applyBlur(const gl::Texture &texture, const float amount);
+  gl::Texture applyBlur(  const gl::Texture &texture, const float amount);
+
   
 private:
   GlslProg CRUSH;
