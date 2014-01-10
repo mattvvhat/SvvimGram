@@ -1,14 +1,15 @@
+// Needed for any kinda GL work
 #include "cinder/app/AppNative.h"
 #include "cinder/gl/gl.h"
-#include "cinder/gl/Fbo.h"
-
 #include "cinder/qtime/QuickTime.h"
 
+// TODO: Write an AudioFftClass... preferably using FMOD though
 #include "cinder/audio/Io.h"
 #include "cinder/audio/Input.h"
 #include "cinder/audio/FftProcessor.h"
 #include "cinder/audio/PcmBuffer.h"
 
+// CUSTOME CODE SO SICK
 #include "SvvimPost.h"
 #include "AsynchMovieWriter.h"
 #include "ProjectionScene.h"
@@ -75,7 +76,8 @@ private:
 };
 
 void SvvimGramApp::prepareSettings(Settings *settings) {
-  settings->setFullScreen();
+  settings->setWindowSize(700, 700);
+  // settings->setFullScreen();
 }
 
 void SvvimGramApp::setup() {
@@ -172,7 +174,7 @@ void SvvimGramApp::draw() {
   gl::Texture texture, blurred;
   
   texture = mScenes.projection->render();
-  blurred = mPost.applyBlur(texture, m___.a);
+  blurred = mPost.applyBlur(texture, 0.33f);
 
   gl::enableAdditiveBlending();
   glEnable(GL_BLEND);
@@ -182,13 +184,13 @@ void SvvimGramApp::draw() {
   glDisable(GL_LIGHTING);
   glDisable(GL_DEPTH_TEST);
   
-  gl::color(ColorA(1, 1, 1, m___.a));
+  gl::color(ColorA(1, 1, 1, .5));
   gl::draw(texture, getWindowBounds());
 
-  gl::color(ColorA(1, .9, .6, m___.a/2.f));
+  gl::color(ColorA(1, .9, .6, .6));
   gl::draw(blurred, getWindowBounds());
   
-  drawLogo();
+  // drawLogo();
   
   //texture = mPost.applyBlur(texture, 3);
 
@@ -196,8 +198,10 @@ void SvvimGramApp::draw() {
   // gl::draw(texture, getWindowBounds());
   
   char path[256];
-  sprintf(path, "%03d.png", mStep);
+  sprintf(path, "%03d.png", mStep % 100);
   // app::console() << path << "\n";
+  
+  writeImage(path, copyWindowSurface());
 }
 void SvvimGramApp::drawLogo() {
   if (mSvvimLogo) {

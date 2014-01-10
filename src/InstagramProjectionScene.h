@@ -35,7 +35,7 @@ public:
   // ...
   void setup () {
     gl::Fbo::Format format;
-    mRenderFbo = gl::Fbo(1000, 500, format);
+    mRenderFbo = gl::Fbo(700, 700, format);
     
     mLastUpdateTime = 0.f;;
     
@@ -92,7 +92,7 @@ public:
       float t2 = t + M_PI;
       
       Vec3d proj  = Vec3f( 11.f * cos(t1), 3,  5.f * sin(t1) );
-      Vec3f eye   = Vec3f( 30.f * cos(t2), 3,  30.f * sin(t2) );
+      Vec3f eye   = Vec3f( 13.f * cos(t2), 3,  13.f * sin(t2) );
 
       mCam.point.lookAt(  eye,  mCam.dest, mCam.up);
       mProjector->lookAt( proj, mCam.dest);
